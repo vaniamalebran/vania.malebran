@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head class="use-font">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet_4/main_4.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1 class="title"> Northside Youth Soccer League</h1>
+
+    <!-- BOTONERA -->
+    <div>
+        <ul class="botonera">
+            <li class="botonera"><a href="#">Form</a></li>
+            <li class="botonera"><a href="contact_4.html">Contact</a></li>
+            <li class="botonera"><a href="information_4.html">Info</a></li>
+            <li class="botonera"><a href="Rules_4.html">Rules</a></li>
+            <li class="botonera"><a href="about_4.html">About</a></li>
+            <li class="botonera"><a href="home_4.html">Home</a></li>
+        </ul>
+    </div>
+    <div class="fondo"></div>
+
+    <div class="container">
+        <div>
+            <!-- <h1 class="sub_title">Upcoming Events</h1> -->
+            <img class="logo" src="img_4/nysl_logo.png" alt="logo">
+        </div>
+        <div class="reglamentos">
+            <h2>Formulario de inscripción</h2>
+            <form action="respuesta_4.html" target="_blanck">
+                <div>
+                    <label for="nombre">Nombre del jugador</label>
+                    <input type="text" id="nombre" name="nombre"></input>
+
+                    <label for="apellido">Apellido del jugador</label>
+                    <input type="text" id="apellido" name="apellido"></input>
+
+                </div>
+                <div>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" class="direccion"></input>
+
+                    <label for="codigo">Código Postal</label>
+                    <input type="number" min="0" max="100000000" id="codigo" name="codigo"></input>
+                </div>
+                <div>
+
+                    <!-- <p>El atributo type="date" define un campo de entrada de tipo fecha</p> -->
+                    <label for="fechanacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fechanacimiento" name="fechanacimiento"></input>
+                </div>
+                <!-- type check box -->
+                <div>
+                    <dl>
+                        <dt>Genero</dt>
+                        <dt>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </dt>
+
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dt>Grado</dt>
+                        <!--  <dd>Playa más cercana</dd> -->
+                        <dt>
+
+                            <input type="radio" id="preescolar" name="preescolar" value="preescolar">
+                            <label for="preescolar"> Preescolar</label><br>
+                            <input type="radio" id="1º" name="1º" value="1º">
+                            <label for="1º"> 1º</label><br>
+                            <input type="radio" id="2º" name="2º" value="2º">
+                            <label for="2º"> 2º</label><br>
+                            <input type="radio" id="3º" name="3º" value="3º">
+                            <label for="3º"> 3º</label><br>
+                            <input type="radio" id="4º" name="4º" value="4º">
+                            <label for="4º"> 4º</label><br>
+                            <input type="radio" id="5º" name="5º" value="5º">
+                            <label for="5º"> 5º</label><br>
+                        </dt>
+
+                    </dl>
+                    <div>
+                        <!-- <p>El tipo checkbox (atributo type="checkbox") le muestra al usuario seleccionar o no una de las
+                            opciones determinadas</p> -->
+                        <dl>
+                            <dt>¿De que escuela vives mas cerca?</dt>
+                            <dd>Escuela más cercana</dd>
+                            <dt>
+                                <input type="checkbox" id="aj katzenmaier" name="aj katzenmaier" value="aj katzenmaier">
+                                <label for="aj katzenmaier"> Aj Katzenmaier</label>
+
+                                <input type="checkbox" id="greenbay" name="greenbay" value="greenbay">
+                                <label for="greenbay"> Greenbay</label>
+
+                                <input type="checkbox" id="howard a yeager" name="howard a yeager"
+                                    value="howard a yeager">
+                                <label for="howard a yeager"> Howard A Yeager</label>
+
+                                <input type="checkbox" id="marjorie p hart" name="marjorie p hart"
+                                    value="marjorie p hart">
+                                <label for="marjorie p hart"> Marjorie P Hart</label>
+
+                                <input type="checkbox" id="north elementary" name="north elementary"
+                                    value="north elementary">
+                                <label for="north elementary"> North Elementary</label>
+
+                                <input type="checkbox" id="south elementary" name="south elementary"
+                                    value="south elementary">
+                                <label for="south elementary"> South Elementary</label>
+                            </dt>
+
+                        </dl>
+                    </div>
+                    <div>
+
+                        <dl>
+                            <dt>¿Qué posición(es) juegas normalmente? </dt>
+                            <dd>(marque todas las que correspondan)</dd>
+                            <dt>
+
+                                <input type="checkbox" id="delantero" name="delantero" value="delantero">
+                                <label for="delantero"> Delantero</label>
+
+                                <input type="checkbox" id="portero" name="portero" value="portero">
+                                <label for="portero"> Portero</label>
+
+                                <input type="checkbox" id="mediocampo" name="mediocampo" value="mediocampo">
+                                <label for="mediocampo"> Mediocampo</label>
+
+                                <input type="checkbox" id="defensa" name="defensa" value="defensa">
+                                <label for="3º"> Defensa</label>
+                            </dt>
+
+                        </dl>
+                    </div>
+                    <div>
+
+                        <dl>
+                            <dt>Tamaño uniforme</dt>
+                            <!--  <dd>Playa más cercana</dd> -->
+                            <dt>
+
+                                <input type="radio" id="niño-p" name="niño-p" value="niño-p">
+                                <label for="niño-p"> Niño P</label><br>
+                                <input type="radio" id="niño-m" name="niño-m" value="niño-m">
+                                <label for="niño-m"> Niño M</label><br>
+                                <input type="radio" id="niño-g" name="niño-g" value="niño-g">
+                                <label for="niño-g"> Niño G</label><br>
+                                <input type="radio" id="pequeño" name="pequeño" value="pequeño">
+                                <label for="pequeño"> Pequeño</label><br>
+                                <input type="radio" id="mediano" name="mediano" value="mediano">
+                                <label for="mediano"> Mediano</label><br>
+                                <input type="radio" id="grande" name="grande" value="grande">
+                                <label for="grande"> Grande</label><br>
+                                <input type="radio" id="extra-grande" name="extra-grande" value="extra-grande">
+                                <label for="extra-grande"> Extra-Grande</label><br>
+                            </dt>
+
+                        </dl>
+                    </div>
+                </div>
+                <!-- elementos select -->
+                <h4>Permiso para jugar</h4>
+                <p>
+                    Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de
+                    registro y yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer
+                    la
+                    posibilidad de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al
+                    solicitante de
+                    registro para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus
+                    empleados
+                    y personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos,
+                    contra cualquier reclamo por o en nombre del solicitante de registro como resultado de la
+                    participación del
+                    solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.
+                    .</p>
+                <p>Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a continuación,
+                    reconozco que he leído la política de cancelación y acepto sus términos.</p>
+
+                <form action="respuesta_4.html" target="_blanck">
+                    <div>
+                        <label for="nombre-tutor">Nombre Padre/Tutor:</label>
+                        <input type="text" id="nombre-tutor" name="nombre-tutor"></input>
+
+                        <label for="fechafirma">Fecha de Firma</label>
+                        <input type="date" id="fechafirma" name="fechafirma"></input>
+
+                    </div>
+
+                    <input type="submit" value="Enviar datos">
+        </div>
+        </form>
+    </div>
+    </div>
+
+
+
+
+</html>
